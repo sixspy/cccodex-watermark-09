@@ -1,0 +1,12 @@
+{
+  "label": "watermark-09",
+  "port": 7380,
+  "login_url": "http://127.0.0.1:7380/login",
+  "http_status": 200,
+  "checks": [
+    "含登录相关文案",
+    "含密码表单线索"
+  ],
+  "passed": true,
+  "checked_at": "2026-11-18T04:58:00+08:00"
+}
