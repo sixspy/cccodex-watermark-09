@@ -99,3 +99,35 @@ th { color: var(--muted); font-weight: 500; }
   border: 1px dashed var(--line);
   border-radius: 14px;
 }
+h4 { margin: 1rem 0 0.4rem; font-size: 0.95rem; }
+.cardish.danger { border-color: var(--danger); background: #fdf2f0; }
+.chip.bad { background: #f7d9d4; color: var(--danger); font-weight: 600; }
+.chip.lime { background: var(--lime); color: var(--lime-ink); font-weight: 600; }
+.mono { font-family: "JetBrains Mono", "Cascadia Mono", ui-monospace, monospace; font-size: 0.85rem; }
+.kv {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: baseline;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: #fff;
+}
+.kv b { color: var(--ink); }
+.head-right { display: flex; align-items: center; gap: 0.6rem; }
+.bind {
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--lime);
+  color: var(--lime-ink);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+tr.over td { background: #fdf2f0; }
+tr.cur td { background: #f3fae6; }
+tr.over td:first-child { box-shadow: inset 3px 0 0 var(--danger); }
+input[type="number"] { text-align: right; }

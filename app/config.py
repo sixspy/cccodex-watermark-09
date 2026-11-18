@@ -11,6 +11,12 @@ class Config:
     ADMIN_PASSWORD = "123456"
     DEFAULT_DB = str(ROOT / "instance" / "watermark_lab.db")
 
+    # 追索深度限制：默认只放行 2 层，超深下游一律拦截。
+    DEFAULT_DEPTH_LIMIT = 2
+    MIN_DEPTH_LIMIT = 1
+    MAX_DEPTH_LIMIT = 8
+    DEPTH_HARD_CAP = 100
+
     @classmethod
     def database(cls) -> str:
         return os.environ.get("DATABASE_PATH", cls.DEFAULT_DB)
